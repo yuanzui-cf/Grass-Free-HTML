@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  },
+  "name": "freehtmlparser",
+  "version": "1.0.0",
+  "description": "This is a Nodejs FreeHTML Parser. It was made by NodeJS.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "FreeHTML"
+  ],
+  "author": "Grass Development Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "html-minifier": "^4.0.0"
+  }
+}
