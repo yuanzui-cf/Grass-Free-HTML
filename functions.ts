@@ -27,9 +27,13 @@ class FreeHtmlParser{
             .replace(/(<hcode>)/gi, `<meta charset="`)
             .replace(/(<icon>)/gi, `<link rel="icon" type="image/x-icon" href="`)
             .replace(/(<info>)/gi, `<meta name="description" content="`)
+            .replace(/(<self-adapt\s*\/?>)/gi, `<meta name="viewport" content="width=device-width">`)
             .replace(/(<key>)/gi, `<meta name="keywords" content="`)
-            .replace(/(<self-adaption\s?\/?>)/gi, `<meta name="viewport" content="width=device-width">`)
-            .replace(/(<\/info>)|(<\/icon>)|(<\/hcode>)|(<\/key>)/gi, `">`)
+            .replace(/(<author>)/gi, `<meta name="author" content="`)
+            .replace(/(<css>)/gi,`<link rel="stylesheet" type="text/css" href="`)
+            .replace(/(<\/info>)|(<\/icon>)|(<\/hcode>)|(<\/key>)|(<\/author>)|(<\/css>)/gi, `">`)
+            .replace(/(<js>)/gi,`<script src="`)
+            .replace(/(<\/js>)/gi,`"></script>`)
             .replace(/\s*(<bgcol>|<bgimg>).*?(<\/bgcol>|<\/bgimg>)/gi, '');
         if(_style){
             _result += `\n<style>${_style}</style>`

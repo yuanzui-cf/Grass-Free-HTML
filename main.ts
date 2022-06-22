@@ -4,7 +4,7 @@ const args:string[] = process.argv.slice();
 let data:string = "";
 switch(args[2]){
     case '--about' || '-about':
-        console.log("Grass Free HTML Parser [Version 1.0.0]\nCopyright (c) 2022 \x1b[32mGrass Development Team.\x1b[0m\n");
+        console.log("Grass Free HTML Parser [Version 1.0.0 (FreeHTML Version 0.1.0)]\nCopyright (c) 2022 \x1b[32mGrass Development Team.\x1b[0m\n");
         console.log("FreeHTML is a simplified HTML. You can use it to write web page more easily. Free HTML was first mentioned and made by Aroton Studio.\nBasic FreeHTML Docs: https://docs.aroton.top/docs/freehtml-help.txt\nDocs of Grass FreeHTML Parser are still writing.");
         break;
     case '--help' || '-help' || '-?' || '--?':
